@@ -13,6 +13,7 @@ fi
 
 if bashio::config.has_value 'MIN_CERT_DATE'; then
     echo "MIN_CERT_DATE: " $(bashio::config 'MIN_CERT_DATE')
+    MIN_CERT_DATE=$(bashio::config 'MIN_CERT_DATE')
 fi
 
 
