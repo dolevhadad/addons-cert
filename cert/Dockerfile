@@ -13,8 +13,8 @@ RUN mkdir /data
 WORKDIR /data
 
 # Copy data for add-on
-COPY run.sh /data/
-COPY run-cert.sh /data/
-RUN chmod a+x /data/run.sh /data/run-cert.sh
+COPY run.sh /
+
+RUN chmod a+x /run.sh
 
 CMD [ "run.sh" ]
