@@ -17,3 +17,7 @@ bashio::log.info "${message:="Hello World..."}"
 
 ## Run your program
 exec /usr/bin/my_program
+
+echo "Hello world!"
+
+python3 -m http.server 8000
