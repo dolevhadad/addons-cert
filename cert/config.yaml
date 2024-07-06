@@ -13,16 +13,18 @@ arch:
   # - i386
 startup: services
 options:
-  CertLocation: fullchain.pem
-  KeyLocation: privkey.pem
-  servers: {}
+  CERT_LOCATION: fullchain.pem
+  KEY_LOCATION: privkey.pem
+  MIN_CERT_DATE: 75
+  SERVERS: {}
 schema:
-  CertLocation: str
-  KeyLocation: str
-  servers:
-    server1: str?
-    port1: str?
-    server2: str?
-    port2: str?
-    server3: str?
-    port3: str?
+  CERT_LOCATION: str
+  KEY_LOCATION: str
+  MIN_CERT_DATE: str
+  SERVERS:
+    SERVER1: str?
+    PORT1: str?
+    SERVER2: str?
+    PORT2: str?
+    SERVER3: str?
+    PORT3: str?
