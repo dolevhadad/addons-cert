@@ -17,4 +17,4 @@ COPY run.sh /data/
 COPY run-cert.sh /data/
 RUN chmod a+x /data/run.sh /data/run-cert.sh
 
-CMD [ "/data/run.sh" ]
+CMD [ "run.sh" ]
