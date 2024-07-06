@@ -16,7 +16,10 @@ options:
   CERT_LOCATION: fullchain.pem
   KEY_LOCATION: privkey.pem
   MIN_CERT_DATE: 75
-  SERVERS: {}
+  SERVERS: {
+    "SERVER1": "plex.hadad.org.il",
+    "PORT1": 32400
+  }
 schema:
   CERT_LOCATION: str
   KEY_LOCATION: str
