@@ -19,7 +19,7 @@ options:
 schema:
   CertLocation: str
   KeyLocation: str
-  servers:
+  Servers:
     server1: str?
     port1: str?
     server2: str?
