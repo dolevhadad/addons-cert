@@ -50,7 +50,7 @@ check(){
     echo ""
     openssl s_client -showcerts -servername $DOM -connect $DOM:$PORT 2>/dev/null | openssl x509 -inform pem -noout -enddate | cut -d "=" -f 2
     echo ""
-    expiry_date=$(openssl s_client -showcerts -servername $DOM -connect $DOM:$PORT 2>/dev/null | openssl x509 -inform pem -noout -enddate | cut -d "=" -f 2 )
+    expiry_date=$(openssl s_client -showcerts -servername $DOM -connect $DOM:$PORT 2>/dev/null | openssl x509 -inform pem -noout -enddate | cut -d "=" -f 2 | sed 's/ GMT//g')
     echo -n " $expiry_date";
     expiry_epoch=$( date -d "$expiry_date" +%s )
     expiry_days="$(( ($expiry_epoch - $now_epoch) / (3600 * 24) ))"
