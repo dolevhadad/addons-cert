@@ -13,17 +13,20 @@ arch:
   # - i386
 startup: services
 options:
-  CertLocation: []
-  KeyLocation: []
-  ServerUrl: [www.nixcraft.com]
-  Port: [443]
+  CertLocation: fullchain.pem
+  KeyLocation: privkey.pem
+  ServerUrl: www.nixcraft.com
+  Port: 443
+  Servers: {}
 schema:
-  CertLocation:
-    - str
-  KeyLocation:
-    - str
-  ServerUrl:
-    - str
-  Port:
-    - str
-  
+  CertLocation: str
+  KeyLocation: str
+  ServerUrl: str
+  Port: str
+  servers:
+    server1: str?
+    key1: str?
+    server2: str?
+    key2: str?
+    server3: str?
+    key3: str?
