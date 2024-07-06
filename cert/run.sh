@@ -3,6 +3,8 @@
 date 
 now_epoch=$( date +%s )
 
+echo ""
+echo "--------------------init--------------------"
 if bashio::config.has_value 'CertLocation'; then
     echo $(bashio::config 'CertLocation')
 fi
@@ -15,9 +17,12 @@ if bashio::config.has_value 'MIN_CERT_DATE'; then
     echo "MIN_CERT_DATE: " $(bashio::config 'MIN_CERT_DATE')
     MIN_CERT_DATE=$(bashio::config 'MIN_CERT_DATE')
 fi
-
+echo "--------------------------------------------"
+echo ""
 
 start(){
+    echo ""
+    echo "-------------------SERVER1-------------------"
     if bashio::config.exists 'SERVERS.SERVER1' && bashio::config.exists 'SERVERS.PORT1'; then
         echo "$(bashio::config 'SERVERS.SERVER1')"
         DOM="$(bashio::config 'SERVERS.SERVER1')"
@@ -26,6 +31,9 @@ start(){
     else 
         echo "SERVER1 not defined"
     fi
+    echo "--------------------------------------------"
+    echo ""
+    echo "-------------------SERVER2-------------------"
 
     if bashio::config.exists 'SERVERS.SERVER2' && bashio::config.exists 'SERVERS.PORT2'; then
         echo "$(bashio::config 'SERVERS.SERVER2')"
@@ -35,6 +43,9 @@ start(){
     else 
         echo "SERVER2 not defined"
     fi
+    echo "--------------------------------------------"
+    echo ""
+    echo "-------------------SERVER3-------------------"
 
     if bashio::config.exists 'SERVERS.SERVER3' && bashio::config.exists 'SERVERS.PORT3'; then
         echo "$(bashio::config 'SERVERS.SERVER3')"
@@ -44,6 +55,8 @@ start(){
     else 
         echo "SERVER3 not defined"
     fi
+    echo "--------------------------------------------"
+    echo ""
 }
 
 check(){
