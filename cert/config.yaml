@@ -15,11 +15,11 @@ startup: services
 options:
   CertLocation: fullchain.pem
   KeyLocation: privkey.pem
-  Servers: {}
+  servers: {}
 schema:
   CertLocation: str
   KeyLocation: str
-  Servers:
+  servers:
     server1: str?
     port1: str?
     server2: str?
