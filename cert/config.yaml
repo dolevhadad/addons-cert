@@ -15,7 +15,7 @@ startup: services
 options:
   CERT_LOCATION: fullchain.pem
   KEY_LOCATION: privkey.pem
-  MIN_CERT_DATE: 75
+  MIN_CERT_DATE: "75"
   SERVERS: {}
 schema:
   CERT_LOCATION: str
