@@ -15,8 +15,8 @@ startup: services
 options:
   CertLocation: []
   KeyLocation: []
-  ServerUrl: []
-  Port: []
+  ServerUrl: [www.nixcraft.com]
+  Port: [443]
 schema:
   CertLocation:
     - str
