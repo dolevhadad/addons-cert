@@ -15,16 +15,16 @@ startup: services
 options:
   CERT_LOCATION: fullchain.pem
   KEY_LOCATION: privkey.pem
-  MIN_CERT_DATE: "75"
+  MIN_CERT_DATE: 75
   SERVERS: {}
 schema:
   CERT_LOCATION: str
   KEY_LOCATION: str
-  MIN_CERT_DATE: str
+  MIN_CERT_DATE: int
   SERVERS:
     SERVER1: str?
-    PORT1: str?
+    PORT1: port?
     SERVER2: str?
-    PORT2: str?
+    PORT2: port?
     SERVER3: str?
-    PORT3: str?
+    PORT3: port?
