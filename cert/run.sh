@@ -12,5 +12,7 @@ if [bashio::config.has_value 'ServerUrl'] && [bashio::config.has_value 'Port']; 
     echo "$(bashio::config 'ServerUrl')"
     printf Q | openssl s_client -servername $(bashio::config 'ServerUrl') -connect $(bashio::config 'ServerUrl'):$(bashio::config 'Port') \
     | openssl x509 -noout -dates
+else 
+    echo "server not defined"
 fi
 
