@@ -22,3 +22,7 @@ schema:
     - str
   KeyLocation:
     - str
+  ServerUrl:
+    - str
+  Port:
+    - str
