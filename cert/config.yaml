@@ -2,7 +2,15 @@ name: "Cert Update"
 description: "allow you to update cert on other servers!"
 version: "1.2.3"
 slug: "cert_update"
-devicetree: true
+hassio_role: manager
+map:
+  - addons:rw
+  - all_addon_configs:rw
+  - backup:rw
+  - homeassistant_config:rw
+  - media:rw
+  - share:rw
+  - ssl:rw
 init: false
 arch:
   # - aarch64
