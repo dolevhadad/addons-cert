@@ -15,11 +15,6 @@ startup: services
 options:
   CertLocation: []
   KeyLocation: []
-ports:
-  8000/tcp: 8000
-options:
-  CertLocation: []
-  KeyLocation: []
   ServerUrl: []
   Port: []
 schema:
