@@ -5,11 +5,11 @@ slug: cert
 description: cert update add-on
 url: "https://github.com/dolevhadad/addons-cert/tree/main/example"
 arch:
-  - armhf
-  - armv7
-  - aarch64
+  # - armhf
+  # - armv7
+  # - aarch64
   - amd64
-  - i386
+  # - i386
 init: false
 map:
   - share:rw
@@ -17,4 +17,5 @@ options:
   message: "Hello world..."
 schema:
   message: "str?"
-image: "ghcr.io/home-assistant/{arch}-addon-example"
+# image: "ghcr.io/home-assistant/{arch}-addon-example"
+image: "ghcr.io/dolevhadad/amd64-addon-cert"
