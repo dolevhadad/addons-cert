@@ -15,18 +15,14 @@ startup: services
 options:
   CertLocation: fullchain.pem
   KeyLocation: privkey.pem
-  ServerUrl: www.nixcraft.com
-  Port: 443
   Servers: {}
 schema:
   CertLocation: str
   KeyLocation: str
-  ServerUrl: str
-  Port: str
   servers:
     server1: str?
-    key1: str?
+    port1: str?
     server2: str?
-    key2: str?
+    port2: str?
     server3: str?
-    key3: str?
+    port3: str?
