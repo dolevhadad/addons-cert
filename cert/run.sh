@@ -1,5 +1,6 @@
 #!/usr/bin/with-contenv bashio
 
+date 
 
 if bashio::config.has_value 'CertLocation'; then
     echo $(bashio::config 'CertLocation')
