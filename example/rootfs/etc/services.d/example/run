@@ -15,8 +15,8 @@ message=$(bashio::config 'message')
 ## Print the message the user supplied, defaults to "Hello World..."
 bashio::log.info "${message:="Hello World..."}"
 
-## Run your program
-exec /usr/bin/my_program
+# ## Run your program
+# exec /usr/bin/my_program
 
 echo "Hello world!"
 
